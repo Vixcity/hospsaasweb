@@ -1,0 +1,29 @@
+@import url('~@/variables.less');
+.rolePermissions{
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+
+  .filterCtn{
+    margin-top: 16px;
+  }
+
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .btn.gray {
+    cursor: not-allowed;
+    color: @gray;
+  }
+  .btn.red {
+    color: @red;
+  }
+}

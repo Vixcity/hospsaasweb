@@ -1,0 +1,26 @@
+@import url('~@/variables.less');
+.doctorManagement{
+  padding: 1px 8px;
+
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .btn.gray {
+    cursor: not-allowed;
+    color: @gray;
+  }
+  .btn.red {
+    color: @red;
+  }
+}
+.itemLabel{
+  color: @black;
+}

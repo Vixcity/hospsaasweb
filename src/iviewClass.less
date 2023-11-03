@@ -1,0 +1,359 @@
+// ----------------------------- 禁用 -----------------------------
+.ivu-input[disabled] {
+  color: #666!important;
+}
+
+// 禁用按钮样式
+.ivu-btn-primary[disabled] {
+  background-color: #92b4ff;
+  border: 0;
+  color: white;
+}
+
+// 表单
+// 取消外发光
+.ivu-input {
+  &:focus {
+    box-shadow: unset !important;
+  }
+}
+
+// 取消外发光
+.ivu-select-selection-focused {
+  box-shadow: unset !important;
+}
+
+// ----------------------------- 分页 -----------------------------
+.ivu-page {
+  // 总条数
+  .ivu-page-total {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+  // 上一页
+  .ivu-page-prev {
+    min-width: 28px !important;
+    height: 28px !important;
+    line-height: 14px !important;
+    border: 1px solid @disabled!important;
+    padding: 6px 8px !important;
+  }
+  // 下一页
+  .ivu-page-next {
+    min-width: 28px !important;
+    height: 28px !important;
+    line-height: 14px !important;
+    border: 1px solid @disabled!important;
+    padding: 6px 8px !important;
+  }
+  // 上一页下一页禁用
+  .ivu-page-disabled {
+    background: #f0f0f5 !important;
+    a {
+      color: @disabled!important;
+    }
+  }
+  // 每页几条
+  .ivu-select-single .ivu-select-selection {
+    height: 28px !important;
+    box-shadow: unset !important;
+    .ivu-select-selected-value {
+      line-height: 28px !important;
+      height: 28px !important;
+    }
+  }
+
+  // 跳至第几页
+  .ivu-page-options-elevator {
+    height: 28px !important;
+    line-height: 28px !important;
+    input {
+      height: 28px !important;
+      box-shadow: unset !important;
+      text-align: center;
+    }
+  }
+  // 页码
+  .ivu-page-item {
+    border-radius: 3px !important;
+    min-width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    // 选中页码
+    &.ivu-page-item-active {
+      background: @blue!important;
+      border: 1px solid #3171ff !important;
+      a {
+        color: white !important;
+      }
+    }
+  }
+}
+
+// ----------------------------- 弹框 -----------------------------
+// 弹窗居中
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal {
+    top: 0;
+  }
+  .el-dialog {
+    border-radius: 6px;
+    margin-top: 10vh !important;
+    .el-dialog__header {
+      border-bottom: 1px solid #e8eaec;
+      padding: 14px 16px;
+      box-sizing: border-box;
+      display: flex;
+      .el-dialog__title {
+        display: inline-block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #282d3c;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .el-dialog__headerbtn {
+        font-size: 18px!important;
+        top: 14px;
+        right: 16px;
+      }
+    }
+    .el-dialog__body {
+      padding: 24px 16px;
+      box-sizing: border-box;
+      max-height: 65vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+// 弹框关闭按钮调整
+.ivu-modal-close {
+  top: 13px !important;
+  right: 13px !important;
+  .ivu-icon-ios-close {
+    font-size: 18px !important;
+  }
+}
+
+// 弹框样式调整
+.ivu-message {
+  z-index: 4000 !important;
+}
+
+.ivu-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.ivu-modal-footer {
+  border-top: unset !important;
+  padding-top: 0 !important;
+  padding-bottom: 24px !important;
+}
+
+.ivu-modal-body {
+  padding: 24px 16px !important;
+}
+
+// elementUI class
+.el-loading-spinner {
+  .path {
+    stroke: @blue!important;
+  }
+}
+
+.el-input__inner{
+  height: 32px!important;
+  padding: 4px 7px!important;
+}
+
+.el-dialog__headerbtn:hover {
+  .el-dialog__close {
+    color: @hover-blue!important;
+  }
+}
+
+.el-dialog__body {
+  padding-bottom: 24px !important;
+}
+
+.el-dialog__footer {
+  padding-top: 0 !important;
+}
+
+.el-message-box__headerbtn:hover {
+  .el-message-box__close {
+    color: @hover-blue!important;
+  }
+}
+
+.el-message-box__header {
+  display: none;
+}
+
+.el-message-box {
+  width: 380px !important;
+}
+
+.el-message-box__message {
+  color: @black;
+}
+
+.el-message-box__status.el-icon-warning {
+  color: @yellow!important;
+}
+
+.el-message-box {
+  padding-bottom: 24px !important;
+}
+
+.el-message-box__content {
+  padding-top: 40px !important;
+  padding-bottom: 0 !important;
+}
+
+.el-message-box__btns {
+  padding-top: 36px !important;
+}
+
+.el-message-box__btns {
+  .el-button--default:first-child {
+    color: @black!important;
+  }
+  .el-button--default:nth-child(2) {
+    margin-left: 16px;
+  }
+  .el-button--default:first-child:hover {
+    color: @hover-blue!important;
+    border-color: @hover-blue!important;
+    background: white !important;
+  }
+}
+
+.el-button--primary {
+  background: @blue!important;
+  border-color: @blue!important;
+  &:hover {
+    background: @hover-blue!important;
+    border-color: @hover-blue!important;
+  }
+}
+
+// 确认框居中
+.ivu-modal {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  .ivu-modal-confirm {
+    padding-left: 8px;
+  }
+  // 提示icon
+  .ivu-modal-confirm-head-icon-confirm {
+    font-size: 22px !important;
+  }
+  // 提示标题文字
+  .ivu-modal-confirm-head-title {
+    margin-left: 8px !important;
+    font-weight: 400;
+  }
+  // 提示文字
+  .ivu-modal-confirm-body {
+    margin-top: 17px;
+    padding-left: 40px !important;
+  }
+  // 取消按钮
+  .ivu-modal-confirm-footer {
+    margin-top: 46px;
+    .ivu-btn.ivu-btn-text {
+      border: 1px solid #d2d7e1;
+    }
+  }
+}
+
+// ----------------------------- 表格 -----------------------------
+// 边框
+.ivu-table-wrapper {
+  border: 0 !important;
+}
+// 表格选中高亮
+.ivu-table-row-highlight td {
+  background: #eaf1ff !important;
+}
+.ivu-table-fixed-header thead > tr > th {
+  border-right: 1px solid white;
+}
+.ivu-table {
+  // 表头
+  .ivu-table-header thead > tr > th {
+    border-right: 1px solid white;
+  }
+  th {
+    color: #282d3c;
+    font-size: 14px;
+    font-weight: normal;
+    background: #d6e3ff !important;
+  }
+  .ivu-table-cell {
+    padding-left: 8px;
+  }
+
+  // 行样式
+  .ivu-table-row {
+    color: #282d3c;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  // 右边框
+  &::after {
+    width: 0 !important;
+  }
+
+  .tableRemove {
+    color: @red;
+    cursor: pointer;
+  }
+
+  .tableAdd {
+    cursor: pointer;
+    color: @blue;
+    margin-right: 16px;
+  }
+}
+
+// ----------------------------- 其他 -----------------------------
+// 菜单栏展开颜色变化
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title {
+  background: #203562 !important;
+}
+
+// 多选
+.ivu-select-multiple {
+  .ivu-tag {
+    border: 0;
+    background: #f5f5fa;
+    &:hover {
+      opacity: unset;
+    }
+    .ivu-icon {
+      &:hover {
+        color: @blue;
+      }
+    }
+  }
+}
+
+// 输入文字的尺寸为14px
+.ivu-input {
+  font-size: 14px !important;
+}

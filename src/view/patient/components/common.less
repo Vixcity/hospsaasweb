@@ -1,0 +1,142 @@
+@import url('~@/variables.less');
+// 打印表格
+#printMe {
+  .printTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .listTable {
+    border: 1px solid #000;
+    display: flex;
+    min-height: 36px;
+    border-bottom: 0;
+    &:last-child {
+      border-bottom: 1px solid #000;
+    }
+    .listItem {
+      border-right: 1px solid #000;
+      padding: 12px 0 12px;
+      text-align: center;
+      font-size: 14px;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    .st {
+      width: 88px;
+      font-weight: 700;
+    }
+    .lt {
+      width: 159px;
+      font-weight: 400;
+    }
+    .RP {
+      width: 89px;
+      padding: 24px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      padding-top: 24px;
+      resize: none;
+      color: #282d3c;
+      font-size: 14px;
+    }
+  }
+  .otherCtn {
+    margin-top: 20px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    .moneyCtn{
+      padding: 14px 9px;
+      border: 1px solid #000;
+      width: 143px;
+      height: 90px;
+    }
+  }
+  .attention{
+    margin-top:21px
+  }
+}
+
+.patient_cont {
+  .title {
+    font-size: 18px;
+    color: @black;
+    margin-top: 16px;
+    font-weight: 500;
+    left: 12px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 4px;
+      display: block;
+      height: 18px;
+      background: @blue;
+      position: absolute;
+      left: -12px;
+      top: 4px;
+    }
+  }
+
+  // 脱敏治疗
+  .tmzl {
+    .tmxx {
+      font-size: 14px;
+      color: @blue;
+      cursor: pointer;
+      &:hover {
+        color: @hover-blue;
+      }
+    }
+    .showInfo {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 40px;
+      font-size: 14px;
+      &:first-child {
+        margin-left: 0;
+      }
+      .label {
+        color: @gray;
+      }
+      .info {
+        color: @black;
+      }
+    }
+    .line {
+      border-top: 1px solid #d2d7e1;
+      margin-top: 16px;
+    }
+  }
+
+  // 检验检查
+  .jyjc {
+    .jcls {
+      font-size: 14px;
+      color: @blue;
+      cursor: pointer;
+      &:hover {
+        color: @hover-blue;
+      }
+    }
+  }
+
+  // 填写医嘱
+  .txyz {
+    .btnCtn {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+}

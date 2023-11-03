@@ -1,0 +1,61 @@
+@import url('~@/variables.less');
+.AIFollowUp {
+  height: 100%;
+  .tabItemCon {
+    background: white;
+    overflow: auto;
+  }
+}
+
+.title {
+  position: relative;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #3171ff;
+    width: 4px;
+    height: 18px;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.itemLabel {
+  margin-left: 40px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.btn {
+  color: @blue;
+  cursor: pointer;
+  margin-left: 16px;
+  &:hover {
+    color: @hover-blue;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.btn.red {
+  color: @red;
+}
+
+.SGJLDetail {
+  padding-top: 16px;
+  .line {
+    margin-top: 16px;
+    border-bottom: 1px solid @disabled;
+    height: 1px;
+    width: 100%;
+  }
+}
+
+.SFJHAdd {
+  padding: 20px 32px;
+}

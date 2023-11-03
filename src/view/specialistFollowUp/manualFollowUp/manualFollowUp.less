@@ -1,0 +1,53 @@
+@import url('~@/variables.less');
+.manualFollowUp {
+  .tabItemCon {
+    padding: 0 8px;
+    background: white;
+    overflow: auto;
+  }
+  .btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3171ff;
+    line-height: 14px;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+
+  .KSSF {
+    padding: 25px 40px;
+    min-height: 600px;
+    overflow: auto;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 500;
+      color: #282d3c;
+      padding-left: 8px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        background: #3171ff;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 4px;
+        height: 18px;
+      }
+    }
+
+    .cont {
+      .item {
+        margin-top: 16px;
+        .label {
+          width: 80px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

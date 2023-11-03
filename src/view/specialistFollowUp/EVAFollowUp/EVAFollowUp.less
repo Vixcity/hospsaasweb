@@ -1,0 +1,109 @@
+@import url('~@/variables.less');
+.EVAFollowUp {
+  height: 100%;
+  .tabItemCon {
+    background: white;
+    overflow: auto;
+    padding: 0 8px;
+  }
+}
+
+.title {
+  position: relative;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #3171ff;
+    width: 4px;
+    height: 18px;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.itemLabel {
+  margin-left: 40px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.btn {
+  color: @blue;
+  cursor: pointer;
+  margin-left: 16px;
+  &:hover {
+    color: @hover-blue;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.btn.red {
+  color: @red;
+}
+
+.EVAAdd {
+  padding: 20px 32px;
+}
+
+.EVADetail {
+  padding-top: 16px;
+  .line {
+    margin-top: 16px;
+    border-bottom: 1px solid @disabled;
+    height: 1px;
+    width: 100%;
+  }
+
+  .dialogBlock {
+    margin-top: 8px;
+  }
+
+  .smallTitle {
+    color: @black;
+    font-size: 14px;
+    min-width: 100px;
+    width: 14%;
+    line-height: 19px;
+  }
+
+  .smallLabel {
+    color: @gray;
+    line-height: 19px;
+    font-size: 14px;
+  }
+
+  .slideBar{
+    width: 100%;
+    color: white;
+    display: flex;
+    margin-top: 36px;
+    .itemSlide{
+      flex: 1;
+      height: 14px;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      position: relative;
+      &:first-child{
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+      }
+      &:last-child{
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+      }
+      .scoreAndArrow{
+        position: absolute;
+        top: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

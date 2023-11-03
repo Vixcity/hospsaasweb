@@ -1,0 +1,40 @@
+@import url('~@/variables.less');
+.cooperativeHospital {
+  padding: 0 8px;
+  .itemLabel {
+    text-align: right;
+    padding-right: 8px;
+  }
+  .itemContent {
+    width: 278px;
+    height: 32px;
+  }
+
+  .flexFrom {
+    display: flex;
+    .fromItem > div {
+      margin-top: 16px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .btn.red {
+    color: @red;
+  }
+}
+.itemLabel{
+  color: @black
+}

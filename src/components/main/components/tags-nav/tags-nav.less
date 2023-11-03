@@ -1,0 +1,168 @@
+@import url('~@/variables.less');
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.size {
+  width: 100%;
+  height: 100%;
+}
+.hover{
+  transition: all .3s;
+  &:hover{
+    color: @blue
+  }
+}
+.tags-nav {
+  position: relative;
+  font-size: 14px;
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    background: #E4E8FA;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    padding: 0 16px;
+    &:last-child{
+      &::before{
+        display: none;
+      }
+    }
+    &::before {
+      content: '';
+      height: 40%;
+      width: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0px;
+      position: absolute;
+      background: #969baa;
+    }
+    &.active {
+      background: white;
+      color: @blue;
+      transform: translateX(-1px);
+      i{
+        color: @blue;
+      }
+      &::before {
+        height: 40%;
+        width: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        position: absolute;
+        background: white;
+      }
+    }
+    &:hover{
+      color: @blue
+    }
+    &:hover i{
+      color: @blue
+    }
+  }
+  .no-select;
+  .size;
+  .close-con {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 32px;
+    background: #E4E8FA;
+    text-align: center;
+    z-index: 10;
+    .ivu-btn-text{
+      color: @gray
+    }
+    .ivu-btn-text:hover{
+      background: #E4E8FA;
+      color: @blue;
+    }
+  }
+  .btn-con {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background: #E4E8FA;
+    padding-top: 3px;
+    z-index: 10;
+    button {
+      padding: 6px 4px;
+      line-height: 14px;
+      text-align: center;
+    }
+    &.left-btn {
+      left: 0px;
+      box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 6%);
+    }
+    &.right-btn {
+      right: 32px;
+      box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 6%);
+      &::before {
+        content: '';
+        height: 40%;
+        width: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        position: absolute;
+        background: #969baa;
+      }
+    }
+    .ivu-btn{
+      color: @gray;
+    }
+    .ivu-btn-text:hover{
+      background: #E4E8FA;
+      color: @blue;
+    }
+  }
+  .scroll-outer {
+    position: absolute;
+    left: 28px;
+    right: 61px;
+    top: 0;
+    bottom: 0;
+    background: #E4E8FA;
+    .scroll-body {
+      height: ~'calc(100% - 1px)';
+      display: inline-block;
+      padding: 1px 4px 0;
+      height: 100%;
+      position: absolute;
+      overflow: visible;
+      white-space: nowrap;
+      transition: left 0.3s ease;
+      .ivu-tag-dot-inner {
+        transition: background 0.2s ease;
+      }
+    }
+  }
+  .contextmenu {
+    position: absolute;
+    margin: 0;
+    padding: 5px 0;
+    background: #fff;
+    z-index: 1000;
+    list-style-type: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+    li {
+      margin: 0;
+      padding: 5px 15px;
+      cursor: pointer;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}

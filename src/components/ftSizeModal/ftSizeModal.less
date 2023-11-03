@@ -1,0 +1,26 @@
+@import url('~@/variables.less');
+
+.flexFrom {
+  display: flex;
+  justify-content: space-between;
+  &:first-child {
+    margin-top: 0;
+  }
+  .fromItem {
+    .itemLabel {
+      text-align: right;
+      padding-right: 8px;
+      color: #282d3c;
+    }
+    .itemContent {
+      width: 206px;
+      height: 32px;
+    }
+  }
+  .fromItem > div {
+    margin-top: 16px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import url('~@/variables.less');
+.pxzs {
+  height: 100%;
+  .tabItemCon {
+    background: white;
+    overflow: auto;
+  }
+}
+
+.willDo,
+.tl {
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.duringDo {
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.finishDo {
+  .btn {
+    cursor: pointer;
+    &:hover {
+      color: @hover-blue;
+    }
+  }
+}
+
+.YYXQ {
+  .contain {
+    padding: 20px 40px;
+  }
+  .editCtn {
+    color: #3171ff;
+    cursor: pointer;
+  }
+}
+
+.dialogTitle {
+  position: relative;
+  font-size: 18px;
+  padding-left: 12px;
+  color: @black;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 4px;
+    height: 18px;
+    background: #3171ff;
+  }
+}

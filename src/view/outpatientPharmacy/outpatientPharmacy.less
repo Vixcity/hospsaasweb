@@ -1,0 +1,66 @@
+@import url('~@/variables.less');
+.outpatientPharmacy {
+  height: 100%;
+  overflow-y: auto;
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .btn.red {
+    color: @red;
+  }
+}
+
+.willOpenMedic,
+.isOpenMedic {
+  background: white;
+
+  .flexFrom {
+    display: flex;
+    justify-content: space-between;
+    &:first-child {
+      margin-top: 0;
+    }
+    .fromItem {
+      .itemLabel {
+        text-align: right;
+        padding-right: 8px;
+      }
+      .itemContent {
+        width: 236px;
+        height: 32px;
+      }
+    }
+    .fromItem > div {
+      margin-top: 16px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .btn {
+    color: @blue;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @hover-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .btn.red {
+    color: @red;
+  }
+}
+.itemLabel {
+  color: #282d3c;
+}
